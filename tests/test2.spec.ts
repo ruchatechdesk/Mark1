@@ -15,6 +15,14 @@ test('Goto PW site and search', async({page})=>{
     const playwrightinput = await page.locator('.DocSearch-Input')
     await expect(playwrightinput).toBeVisible({ timeout: 10000 });
     await expect(playwrightinput).toBeVisible()
-    // playwrightinput.click()
+ 
     await playwrightinput.fill('input')
+})
+
+test('Goto PW and search auto wait', async({page})=>{
+
+   
+    await page.goto('https://playwright.dev/')
+    console.log('URL opened')
+    await page.locator('')
 })
