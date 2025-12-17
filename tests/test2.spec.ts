@@ -25,4 +25,5 @@ test('Goto PW and search auto wait', async({page})=>{
     await page.goto('https://playwright.dev/')
     console.log('URL opened')
     await page.locator('')
+    console.log('test ')
 })
